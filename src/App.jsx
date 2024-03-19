@@ -97,10 +97,12 @@ function App() {
             <span className='myDayText'>My Day</span>
             <span className='dateText'>{formattedDate}</span>
           </div>
-          <img 
-              src="./src/assets/icon1.png"
-              className='todoLogo'
-          />
+          <div className='logoContainer'>
+            <img 
+                src="./src/assets/icon1.png"
+                className='todoLogo'
+            />
+          </div>
         </div>  
         <div className='masterContainer'>
           <div className='createdCompletedContainer'>
