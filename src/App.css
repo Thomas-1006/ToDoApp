@@ -4,6 +4,7 @@
   margin: 0%;
   background: linear-gradient(180deg, rgba(39,117,123,1) 0%, rgba(240,211,203,1) 100%);
   border-radius: 7px;
+  min-height: 100vh;
 }
 
 .titleDate {
@@ -61,7 +62,6 @@
   border-radius: 4px;
   padding: 2%;
   margin-bottom: 2%;
-
 }
 
 .textCheckBoxContainer {
@@ -125,12 +125,8 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
   background-color: white;
-}
-
-.input[type="text"]::focus {
-  border: blue;
 }
 
 .taskCheckbox {

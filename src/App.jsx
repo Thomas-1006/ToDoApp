@@ -121,15 +121,15 @@ function App() {
                 tasks.map((task, index) => (
                   <div className='addedTask'>
                         {task.editable ? ( 
-                          <div className='editText'>
+                          <div className='editBox'>
                             <input
                               type="text"
                               value={task.text}
                               onChange={(e) => handleChangeTask(e, index)}
                             />
-                              <button className='editSaveButton' onClick={() => handleSaveTask(index)}>
-                                <FontAwesomeIcon icon={faSave} />
-                              </button>
+                            <button className='editSaveButton' onClick={() => handleSaveTask(index)}>
+                               <FontAwesomeIcon icon={faSave} />
+                            </button>    
                           </div>
                           ) : (
                             <>
