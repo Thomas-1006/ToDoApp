@@ -107,12 +107,21 @@ function App() {
         <div className='masterContainer'>
           <div className='createdCompletedContainer'>
             <div className='createdTaskBox'>
+            <div className='inputBox'>
+              <input 
+                type='text'
+                value={newTask}
+                onChange={(e) => setNewTask(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder='Add a Task..'
+              />
+            </div>
               <h3>Tasks</h3>
               {
                 tasks.map((task, index) => (
                   <div className='addedTask'>
-                        {task.editable ? (
-                          <div className='editContainer'>
+                        {task.editable ? ( 
+                          <div className='editText'>
                             <input
                               type="text"
                               value={task.text}
@@ -172,15 +181,6 @@ function App() {
               }
             </div>
           </div>  
-          <div className='inputBox'>
-            <input 
-              type='text'
-              value={newTask}
-              onChange={(e) => setNewTask(e.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder='Add a Task..'
-            />
-          </div>
         </div>
       </div>
     </div>
